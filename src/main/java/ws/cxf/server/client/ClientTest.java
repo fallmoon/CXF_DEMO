@@ -78,7 +78,5 @@ public static void invokeM2(){
 	System.out.println("Add person result: " + result.getMessage()); 
 	System.exit(0);
 	
-	
-
 }
 }
