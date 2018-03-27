@@ -59,7 +59,7 @@ public static void invokeM2(){
 	outProps.put(WSHandlerConstants.ACTION,
 			WSHandlerConstants.USERNAME_TOKEN);
 	// 服务器用户标识
-	outProps.put(WSHandlerConstants.USER, "IamServer");
+	outProps.put(WSHandlerConstants.USER, "xgx");
 	// 密码类型 : plain text--passwordtext
 	outProps.put(WSHandlerConstants.PASSWORD_TYPE, WSConstants.PW_TEXT);
 	// 返回给客户端的密码信息,密码处理回掉类
@@ -68,8 +68,12 @@ public static void invokeM2(){
 	WSS4JOutInterceptor wss = new WSS4JOutInterceptor(outProps);
     factory.getOutInterceptors().add(wss);
 	CxfServerService client = (CxfServerService) factory.create(); 
-	String reply = client.sayHi("HI"); 
+	String reply = client.sayHi("我是xgx，哈哈哈哈"); 
+	ReqInfo info =new ReqInfo(); 
+	info.setAddress("北京");
+	WsResult result = client.addPersonInfo(info);
 	System.out.println("Server said: " + reply); 
+	System.out.println("Add person result: " + result.getMessage()); 
 	System.exit(0);
 	
 	
