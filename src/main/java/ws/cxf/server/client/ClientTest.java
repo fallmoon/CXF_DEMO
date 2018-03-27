@@ -1,5 +1,6 @@
 package ws.cxf.server.client;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -71,6 +72,7 @@ public static void invokeM2(){
 	String reply = client.sayHi("我是xgx，哈哈哈哈"); 
 	ReqInfo info =new ReqInfo(); 
 	info.setAddress("北京");
+	info.setBirthDate(new Date());
 	WsResult result = client.addPersonInfo(info);
 	System.out.println("Server said: " + reply); 
 	System.out.println("Add person result: " + result.getMessage()); 

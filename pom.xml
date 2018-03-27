@@ -11,6 +11,7 @@
   <!-- 设置属性，版本和其它 -->
   	<properties>
 		<cxf.version>3.1.2</cxf.version>
+		<jackson.version>2.0.6</jackson.version>
 	</properties>
   	
   <!-- 添加依赖 -->
@@ -43,6 +44,17 @@
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-rt-ws-security</artifactId>
 			<version>${cxf.version}</version>
+		</dependency>
+			<!-- JSON -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.module</groupId>
+			<artifactId>jackson-module-jaxb-annotations</artifactId>
+			<version>${jackson.version}</version>
 		</dependency>
   </dependencies>
   <build>
