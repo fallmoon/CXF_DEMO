@@ -1,0 +1,48 @@
+CXF:  更多详细信息，请查看官方指南//http://cxf.apache.org/
+	①、SOAP    服务端和客服端的实现
+			核心：WSDL描述，客户端调用时生成SOAP报文，服务端解析报文同样响应报文个客服端
+						WSDL-JAVA文件的相互转换
+						XmlSchema,Data-bindings,javax-ws
+						
+					注意CXF添加安全机制的实现方式：	
+										CallBackHanlder
+					阶段性拦截器：
+										PhaseInterceptor
+					
+					重点：
+							客户端的多种调用方式
+							
+							
+	②、REST  webservice via  cxf
+			
+			
+			
+			=================webservice实体最好实现序列化=========================
+			
+			
+	二、	发布方式：publish service
+	
+							①、Endpoint方式发布，简单快速
+					
+							②、Factory工厂方式发布，添加更多控制
+							
+							
+							
+关于：WS-Security
+		WS-Security以现有的密码学以及XML加密和签名行业标准为基础，为Web Services应用程序提供了一组全面的安全特性，
+		可以通过WS-Policy和WS-SecurityPolicy来指定特定应用程序可以使用哪些特性，从而允许服务客户机自行配置以访问服务。
+
+WS-Security覆盖以下三方面内容：
+
+		·描述通过消息完整性、消息机密性和SOAP消息传递的增强质量。
+		·提供关联安全性令牌和消息的通用机制。
+		·描述如何对二进制安全性令牌编码。
+		
+WS-Security提供三种主要机制：
+
+		·安全性令牌传播
+		·消息完整性
+		·消息机密性
+		
+		详细解释请看:https://blog.csdn.net/accountwcx/article/details/47279691
+					
