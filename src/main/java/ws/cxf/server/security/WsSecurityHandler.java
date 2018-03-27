@@ -23,8 +23,11 @@ public class WsSecurityHandler implements CallbackHandler{
 	@SuppressWarnings("deprecation")
 	public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
 		WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
+		pc.setIdentifier("xgx");
 		if (pc.getIdentifier().equals("xgx")) {
-			//设置密码，校验机制会将这个密码和客户端的做比较
+			//设置密码，校验机制会将这个密码和客户端的密码做比较
+			//新版本不需要写校验逻辑，API自动校验，只需要设置校验的密码
+			//重要：用户名需要自己校验判断
             // set the password on the callback. This will be compared to the password which was sent from the client.
             pc.setPassword("123456");
         }
