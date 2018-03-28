@@ -1,1 +1,0 @@
-使用gitbash删除GitHub上不需要的文件
