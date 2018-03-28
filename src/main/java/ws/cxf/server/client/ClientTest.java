@@ -60,7 +60,7 @@ public static void invokeM2(){
 	outProps.put(WSHandlerConstants.ACTION,
 			WSHandlerConstants.USERNAME_TOKEN);
 	// 服务器用户标识
-	outProps.put(WSHandlerConstants.USER, "xgx");
+	outProps.put(WSHandlerConstants.USER, "zyg");
 	// 密码类型 : plain text--passwordtext
 	outProps.put(WSHandlerConstants.PASSWORD_TYPE, WSConstants.PW_TEXT);
 	// 返回给客户端的密码信息,密码处理回掉类

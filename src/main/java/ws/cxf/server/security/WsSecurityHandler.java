@@ -22,11 +22,10 @@ public class WsSecurityHandler implements CallbackHandler{
 
 	public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
 		WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
-		pc.setIdentifier("xgx");
+		//重要：用户名需要自己校验判断,多用户
 		if (pc.getIdentifier().equals("xgx")) {
 			//设置密码，校验机制会将这个密码和客户端的密码做比较
 			//新版本不需要写校验逻辑，API自动校验，只需要设置校验的密码
-			//重要：用户名需要自己校验判断
             // set the password on the callback. This will be compared to the password which was sent from the client.
             pc.setPassword("123456");
             /*
@@ -34,6 +33,8 @@ public class WsSecurityHandler implements CallbackHandler{
              * he password validation of the special case of a plain-text password (or any other yet unknown password type) is delegated to the callback class.
              *  In that case, the ServerPasswordCallback should be something like the following one:
              */
+        }else if(pc.getIdentifier().equals("zyg")){
+        	pc.setPassword("950416");
         }
 	}
 }
