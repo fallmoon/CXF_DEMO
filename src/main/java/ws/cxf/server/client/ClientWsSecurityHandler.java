@@ -27,6 +27,7 @@ public class ClientWsSecurityHandler implements CallbackHandler{
 	         * This is so we don't have to store our password in our configuration file.
 	         */
 	     // set the password for our message.
+	        pc.setIdentifier("zyg");//这里必须设置identifier让服务端按用户判断进行校验密码
 	        pc.setPassword("950416");
 	}
 }

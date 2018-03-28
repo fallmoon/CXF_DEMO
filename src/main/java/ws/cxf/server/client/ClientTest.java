@@ -59,8 +59,8 @@ public static void invokeM2(){
 	Map<String, Object> outProps = new HashMap<String, Object>();
 	outProps.put(WSHandlerConstants.ACTION,
 			WSHandlerConstants.USERNAME_TOKEN);
-	// 服务器用户标识
-	outProps.put(WSHandlerConstants.USER, "zyg");
+	// 服务器用户标识,这个和identifier无关，看服务器端
+	outProps.put(WSHandlerConstants.USER, "tom");
 	// 密码类型 : plain text--passwordtext
 	outProps.put(WSHandlerConstants.PASSWORD_TYPE, WSConstants.PW_TEXT);
 	// 返回给客户端的密码信息,密码处理回掉类
