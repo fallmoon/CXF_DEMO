@@ -1,4 +1,4 @@
-package ws.cxf.server.client;
+package ws.cxf.soap.client;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -12,9 +12,9 @@ import org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor;
 import org.apache.wss4j.dom.WSConstants;
 import org.apache.wss4j.dom.handler.WSHandlerConstants;
 
-import ws.cxf.server.CxfServerService;
-import ws.cxf.server.po.ReqInfo;
-import ws.cxf.server.po.WsResult;
+import ws.cxf.soap.CxfServerService;
+import ws.cxf.soap.po.ReqInfo;
+import ws.cxf.soap.po.WsResult;
 
 
 

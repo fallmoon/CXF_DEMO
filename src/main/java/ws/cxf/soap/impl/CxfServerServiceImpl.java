@@ -1,13 +1,13 @@
-package ws.cxf.server.impl;
+package ws.cxf.soap.impl;
 
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
-import ws.cxf.server.CxfServerService;
-import ws.cxf.server.po.ReqInfo;
-import ws.cxf.server.po.WsResult;
+import ws.cxf.soap.CxfServerService;
+import ws.cxf.soap.po.ReqInfo;
+import ws.cxf.soap.po.WsResult;
 
 /**
  * cxf服务端：使用@Webservice注解，让程序知道哪里需要转化为WSDL

@@ -1,4 +1,4 @@
-package ws.cxf.server.security;
+package ws.cxf.soap.security;
 
 import java.io.IOException;
 
@@ -22,6 +22,7 @@ public class WsSecurityHandler implements CallbackHandler{
 
 	public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
 		WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
+		
 		//重要：用户名需要自己校验判断,多用户
 		if (pc.getIdentifier().equals("xgx")) {
 			//设置密码，校验机制会将这个密码和客户端的密码做比较

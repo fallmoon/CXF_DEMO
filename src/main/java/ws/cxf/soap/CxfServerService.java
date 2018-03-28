@@ -1,11 +1,11 @@
-package ws.cxf.server;
+package ws.cxf.soap;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
-import ws.cxf.server.po.ReqInfo;
-import ws.cxf.server.po.WsResult;
+import ws.cxf.soap.po.ReqInfo;
+import ws.cxf.soap.po.WsResult;
 
 
 /**

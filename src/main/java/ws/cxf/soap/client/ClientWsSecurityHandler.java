@@ -1,4 +1,4 @@
-package ws.cxf.server.client;
+package ws.cxf.soap.client;
 
 import java.io.IOException;
 

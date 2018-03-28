@@ -1,4 +1,4 @@
-package ws.cxf.server.po;
+package ws.cxf.soap.po;
 
 import java.util.Date;
 import javax.xml.bind.annotation.XmlMimeType;

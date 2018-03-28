@@ -1,4 +1,4 @@
-package ws.cxf.server;
+package ws.cxf.soap;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,8 +12,8 @@ import org.apache.cxf.ws.security.wss4j.WSS4JInInterceptor;
 import org.apache.wss4j.dom.WSConstants;
 import org.apache.wss4j.dom.handler.WSHandlerConstants;
 
-import ws.cxf.server.impl.CxfServerServiceImpl;
-import ws.cxf.server.security.WsSecurityHandler;
+import ws.cxf.soap.impl.CxfServerServiceImpl;
+import ws.cxf.soap.security.WsSecurityHandler;
 /**
  * 关于Jar包问题：
  * 使用的Jar包和你希望发布的服务有关
